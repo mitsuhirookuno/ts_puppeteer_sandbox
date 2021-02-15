@@ -5,7 +5,7 @@ import { BaseCrawler } from './base_crawler';
 export default class TestCrawler extends BaseCrawler {
     protected async crawl(_: Browser, page: Page) {
         await page
-            .goto('https://www.uluru.biz/')
-            .then(() => page.waitFor(1000));
+            .goto('https://fukurou-labo.co.jp/')
+            .then(() => page.waitForTimeout(1000));
     }
 }
